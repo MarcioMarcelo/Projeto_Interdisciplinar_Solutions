@@ -1,0 +1,177 @@
+
+:root
+{
+    --azul-logo: rgb(0, 88, 250);
+    --roxo-logo: rgb(60, 14, 241);
+    --azulalt: rgb(22, 248, 250);
+    --titulo-01: rgb(51, 51, 51);
+    --corpo-01: rgb(89, 89, 89);
+    --legenda-01: rgb(115, 115, 115);
+    --desabilitado: rgb(179, 179, 179);
+    --links: rgb(60, 14, 241);
+    --erro: rgb(248, 34, 17);
+    --aviso: rgb(248, 247, 17);
+    --sucesso:rgb(42, 251, 13);
+
+}
+
+.pageSn
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #E7E9F1;
+    margin: 0;
+}
+
+.menu
+{
+    font-family: 'ExoBold';
+    font-style: normal;
+    position: relative;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 71px;
+    align-items: center;
+    background: #FFFFFF;
+    display: flex;
+}
+.menu ul 
+{
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    height: 71px;
+    align-items: center;
+}
+.menu ul li
+{
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    left: 75px;
+}
+
+.menu ul li a:hover
+{
+    color: var(--azulalt);
+}
+.menu ul li a 
+{
+    color: var(--azul-logo);
+    text-decoration: none;
+    padding: 0px;
+    display: inline-block;
+    transition: color 0.2s;
+    font-size: 25px;
+    margin: 0px;
+    margin-right: 15px;
+    font-family: 'ExoBold';
+}
+
+.menu ul ul
+{
+    position: absolute;
+    display: none;
+    left: 0;
+    font-family: 'Exo';
+    font-weight: bold;
+}
+
+.ilustracao2
+{
+    background-image: url("../img/Ilustracao_sobre_nos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    z-index: 0;
+}
+.txtsn h1
+{
+    font-family: 'ExoBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 53px;
+    color: var(--titulo-01);
+}
+.txtsn p
+{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: justify;
+    color: var(--corpo-01);
+}
+
+.txtsn 
+{
+    position: absolute;
+    width: 558px;
+    height: 390px;
+    right: 71px;
+    top: 200px;
+}
+@media (max-width: 480px) {
+    .txtsn {
+        position: relative;
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 0;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .ilustracao2 {
+        display: none;
+    }
+
+    .txtsn h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .txtsn p {
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        height: auto;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu ul li a {
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu ul li a {
+        font-size: 18px;
+    }
+}

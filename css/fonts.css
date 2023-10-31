@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Exo';
+    src: url('../fonts/exo/Exo-Regular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ExoBold';
+    src: url('../fonts/exo/Exo-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter/Inter-Regular.ttf') format('truetype');
+  }
